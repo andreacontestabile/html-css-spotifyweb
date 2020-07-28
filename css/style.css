@@ -266,6 +266,11 @@ a:active {
   text-align: center;
 }
 
+.featured-item__img-container {
+  position: relative;
+  font-size: 0;
+}
+
 .featured-item__img {
   width: 100%;
 }
@@ -453,7 +458,32 @@ a:active {
   background-color: #5A5A5A;
 }
 
-/* Player Details */
+/* Details */
+
+.featured-item:hover .featured-item__img-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "\f144";
+  height: 100%;
+  width: 100%;
+  font-family: "Font Awesome 5 Free";
+  font-size: 50px;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popular .featured-item:hover .featured-item__img-container::before {
+  border-radius: 50%;
+}
+
+.featured-item:hover {
+  cursor: pointer;
+}
+
 
 .player__controls-top a.button-play:hover {
   font-size: 38px;
