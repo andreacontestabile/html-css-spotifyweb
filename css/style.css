@@ -374,6 +374,7 @@ a:active {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  height: 40px;
 }
 
 .player__controls-top a {
@@ -390,8 +391,13 @@ a:active {
 }
 
 .player__controls-top a.button-play {
-  margin-left: 30px;
-  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 30px;
 }
 
@@ -404,6 +410,7 @@ a:active {
 }
 
 .player__time {
+  position: relative;
   height: 4px;
   width: 100%;
   margin: 0 20px;
@@ -440,7 +447,49 @@ a:active {
 }
 
 .player__volume .volume-bar {
-height: 4px;
-width: 100%;
-background-color: #5A5A5A;
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background-color: #5A5A5A;
+}
+
+/* Player Details */
+
+.player__controls-top a.button-play:hover {
+  font-size: 38px;
+}
+
+.player__time::before,
+.player__volume .volume-bar::before {
+  content: "";
+  height: 4px;
+  width: 25%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #C1C1C1;
+  border-radius: 5px;
+}
+
+.player__time:hover,
+.player__volume .volume-bar:hover {
+  cursor: pointer;
+}
+
+.player__time:hover::before,
+.player__volume .volume-bar:hover::before {
+  background-color: #ADFF2F;
+}
+
+.player__time:hover::after,
+.player__volume .volume-bar:hover::after  {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
 }
