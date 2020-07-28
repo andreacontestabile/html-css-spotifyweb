@@ -1,3 +1,5 @@
+/* Generale */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,11 +50,15 @@ a:active {
   background-color: #A3A3A3;
 }
 
+/* MAIN CONTENT */
+
 .main-content {
   display: flex;
   height: calc(100% - 100px);
   background-color: grey;
 }
+
+/* SIDEBAR */
 
 .sidebar {
   display: flex;
@@ -60,7 +66,7 @@ a:active {
   flex-shrink: 0;
   width: 250px;
   height: 100%;
-  padding: 20px;
+  padding: 20px 20px 8px;
   font-size: 13px;
   font-weight: 600;
   color: #717171;
@@ -98,6 +104,25 @@ a:active {
   padding: 0 0 8px 0;
 }
 
+.link-home::before {
+  content: url('../img/home.svg');
+}
+
+.link-search::before {
+  content: url('../img/search.svg');
+}
+
+.link-library::before {
+  content: url('../img/library.svg');
+}
+
+.main-nav__link::before {
+  display: inline-block;
+  margin-right: 5px;
+  width: 25px;
+  vertical-align: middle;
+}
+
 .main-nav__item.current_page {
   position: relative;
 }
@@ -116,6 +141,8 @@ a:active {
 .main-nav__item.current_page a {
   color: #fff;
 }
+
+/* Playlist */
 
 .playlist {
   margin-top: 20px;
@@ -142,9 +169,45 @@ a:active {
   padding: 8px 0;
 }
 
+/* Account Info */
+
 .account-info {
-  flex: 0 0 80px;
+  flex: 0 0 60px;
   margin-top: auto;
+}
+
+.account-info .link-app {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #717171;
+}
+
+.account-info__name {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.account-info__name::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background-color: #808080;
+  background-image: url('../img/profile.svg');
+  background-repeat: none;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.link-app::before {
+  content: url('../img/download.svg');
+  display: inline-block;
+  margin-right: 5px;
+  width: 15px;
+  vertical-align: middle;
 }
 
 .main-view {
@@ -155,6 +218,8 @@ a:active {
   overflow-y: auto;
   background-color: #141922;
 }
+
+/* UPGRADE */
 
 .upgrade {
   position: fixed;
@@ -168,6 +233,8 @@ a:active {
   padding: 10px;
   background-color: rgba(0,0,0,0.75);
 }
+
+/* PLAYER */
 
 .player {
   position: relative;
