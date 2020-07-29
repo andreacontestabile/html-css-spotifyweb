@@ -73,9 +73,25 @@ a:active {
   background-color: #000;
 }
 
+@media screen and (max-width: 620px) {
+  .sidebar {
+    width: 48px;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
 .sidebar .logo-img {
   height: 42px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 620px) {
+  .sidebar .logo-img {
+    content: url('../img/spotify-logo-small.svg');
+    height: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .sidebar__header {
@@ -98,6 +114,12 @@ a:active {
 
 .main-nav .main-nav__item {
   padding: 8px 0;
+}
+
+@media screen and (max-width: 620px) {
+  .main-nav .main-nav__item {
+    padding: 3px 0;
+  }
 }
 
 .main-nav .main-nav__item:first-child {
@@ -123,6 +145,12 @@ a:active {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 620px) {
+  .main-nav__link::before {
+    margin-right: 0;
+  }
+}
+
 .main-nav__item.current_page {
   position: relative;
 }
@@ -142,11 +170,23 @@ a:active {
   color: #fff;
 }
 
+@media screen and (max-width: 620px) {
+  span {
+    display: none;
+  }
+}
+
 /* Playlist */
 
 .playlist {
   margin-top: 20px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 620px) {
+  .playlist {
+    display: none;
+  }
 }
 
 .playlist__header {
@@ -182,6 +222,13 @@ a:active {
   border-bottom: 1px solid #717171;
 }
 
+@media screen and (max-width: 620px) {
+  .account-info .link-app {
+    border: none;
+    padding: 0;
+  }
+}
+
 .account-info__name {
   margin-top: 15px;
   font-size: 14px;
@@ -197,9 +244,15 @@ a:active {
   vertical-align: middle;
   background-color: #808080;
   background-image: url('../img/profile.svg');
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center center;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 620px) {
+  .account-info__name::before {
+    margin-right: 0;
+  }
 }
 
 .link-app::before {
@@ -208,6 +261,12 @@ a:active {
   margin-right: 5px;
   width: 15px;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 620px) {
+  .link-app::before {
+    margin-right: 0;
+  }
 }
 
 /* MAIN VIEW */
@@ -231,7 +290,7 @@ a:active {
 
 .main-view-nav__item {
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 .main-view-nav__item:not(:last-child) {
@@ -242,18 +301,6 @@ a:active {
   position: relative;
 }
 
-.main-view-nav__item.current_category::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 32px;
-  background-color: #ADFF2F;
-}
-
 .main-view-nav__link {
   color: #7D7F84;
   font-size: 13px;
@@ -261,8 +308,20 @@ a:active {
   text-transform: uppercase;
 }
 
+.main-view-nav__item.current_category .main-view-nav__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 32px;
+  background-color: #ADFF2F;
+}
+
 .featured {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .featured__subtitle {
@@ -343,6 +402,12 @@ a:active {
   background-color: rgba(0,0,0,0.75);
 }
 
+@media screen and (max-width: 620px) {
+  .upgrade {
+    width: calc(100% - 48px);
+  }
+}
+
 /* PLAYER */
 
 .player {
@@ -404,7 +469,7 @@ a:active {
 
   .playing__actions {
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 
@@ -525,6 +590,12 @@ a:active {
 @media screen and (max-width: 992px) {
   .player__volume .volume-bar {
     min-width: 80px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .player__volume .volume-bar {
+    min-width: 45px;
   }
 }
 
