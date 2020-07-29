@@ -283,6 +283,22 @@ a:active {
   text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .featured__container {
+    flex-wrap: wrap;
+  }
+  .featured-item {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .featured-item {
+    width: 50%;
+  }
+}
+
 .featured-item__img-container {
   position: relative;
   font-size: 0;
@@ -336,7 +352,7 @@ a:active {
   position: relative;
   z-index: 1;
   height: 100px;
-  padding: 0 20px;
+  padding: 0 10px;
   background-color: #282828;
 }
 
@@ -352,8 +368,22 @@ a:active {
  margin-right: 20px;
 }
 
+@media screen and (max-width:992px) {
+
+  .playing__img {
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+
 .playing__data {
   margin-right: 40px;
+}
+
+@media screen and (max-width:992px) {
+  .playing__data {
+    margin-right: 20px;
+  }
 }
 
 .playing__title {
@@ -369,6 +399,15 @@ a:active {
 .playing__actions {
   display: flex;
 }
+
+@media screen and (max-width: 992px) {
+
+  .playing__actions {
+    flex-direction: column;
+    margin-right: 30px;
+  }
+}
+
 .playing__actions a {
   color: #7D7F84;
   font-size: 18px;
@@ -386,8 +425,7 @@ a:active {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  max-width: 50%;
-  padding: 0 100px;
+  max-width: 40%;
 }
 
 /* Controls Top */
@@ -435,7 +473,7 @@ a:active {
   position: relative;
   height: 4px;
   width: 100%;
-  margin: 0 20px;
+  margin: 0 10px;
   background-color: #5A5A5A;
   border-radius: 5px;
 }
@@ -448,31 +486,46 @@ a:active {
 
 .player__settings {
   display: flex;
-  flex-grow: 1;
   max-width: 250px;
+}
+
+@media screen and (max-width: 992px) {
+  .player__settings {
+    margin-left: 20px;
+  }
 }
 
 .player__settings a {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .player__settings a:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .player__settings a:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .player__volume {
   display: flex;
-  align-items: center;
-  max-width: 200px;
-  width: 100%;
+  align-items: center;;
 }
 
 .player__volume .volume-bar {
   position: relative;
   height: 4px;
-  width: 100%;
+  min-width: 110px;
   background-color: #5A5A5A;
+}
+
+@media screen and (max-width: 992px) {
+  .player__volume .volume-bar {
+    min-width: 80px;
+  }
 }
 
 /* Details */
