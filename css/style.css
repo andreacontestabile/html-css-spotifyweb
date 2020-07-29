@@ -231,10 +231,27 @@ a:active {
 
 .main-view-nav__item {
   display: inline-block;
+  padding-bottom: 5px;
 }
 
 .main-view-nav__item:not(:last-child) {
   margin-right: 15px;
+}
+
+.main-view-nav__item.current_category {
+  position: relative;
+}
+
+.main-view-nav__item.current_category::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 32px;
+  background-color: #ADFF2F;
 }
 
 .main-view-nav__link {
@@ -480,11 +497,6 @@ a:active {
   border-radius: 50%;
 }
 
-.featured-item:hover {
-  cursor: pointer;
-}
-
-
 .player__controls-top a.button-play:hover {
   font-size: 38px;
 }
@@ -502,7 +514,8 @@ a:active {
 }
 
 .player__time:hover,
-.player__volume .volume-bar:hover {
+.player__volume .volume-bar:hover,
+.featured-item:hover {
   cursor: pointer;
 }
 
