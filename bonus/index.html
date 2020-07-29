@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Spotify</title>
+</head>
+<body>
+
+  <div class="app-wrapper">
+    <!-- main content -->
+    <main class="main-content">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <!-- sidebar header -->
+        <header class="sidebar__header">
+          <img src="img/spotify-logo.svg" alt="Spotify" class="logo-img">
+          <!-- main navigation -->
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item current_page"><a href="#" class="main-nav__link link-home"><span>Home</span></a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link link-search"><span>Cerca</span></a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link link-library"><span>La tua libreria</span></a></li>
+            </ul>
+          </nav>
+          <!-- /main navigation -->
+        </header>
+        <!-- /sidebar header -->
+        <!-- playlist -->
+        <div class="playlist">
+          <div class="playlist__header">
+            <h2>Playlist</h2>
+            <a href="#" class="btn-pl-create">Crea playlist</a>
+          </div>
+            <!-- playlist list -->
+            <ul class="playlist__list">
+              <li class="playlist__entry"><a href="#">Nome Playlist</a></li>
+              <li class="playlist__entry"><a href="#">Nome Playlist</a></li>
+              <li class="playlist__entry"><a href="#">Nome Playlist</a></li>
+              <li class="playlist__entry"><a href="#">Nome Playlist</a></li>
+              <li class="playlist__entry"><a href="#">Nome Playlist</a></li>
+              <li class="playlist__entry"><a href="#">Nome Playlist</a></li>
+              <li class="playlist__entry"><a href="#">Nome Playlist</a></li>
+            </ul>
+            <!-- /playlist list -->
+        </div>
+        <!-- /playlist -->
+        <!-- account info -->
+        <div class="account-info">
+          <a href="#" class="link-app"><span>Installa app</span></a>
+          <h3 class="account-info__name"><span>John Doe</span></h3>
+        </div>
+        <!-- /account info -->
+      </aside>
+      <!-- /sidebar -->
+      <!-- main view -->
+      <section class="main-view">
+        <div class="upgrade">
+          <a href="" class="btn btn-round">Effettua l'upgrade</a>
+        </div>
+        <!-- Main View Navigation -->
+        <nav class="main-view-nav">
+          <ul class="main-view-nav__list">
+            <li class="main-view-nav__item current_category"><a href="#" class="main-view-nav__link">In evidenza</a></li>
+            <li class="main-view-nav__item"><a href="#" class="main-view-nav__link">Podcast</a></li>
+            <li class="main-view-nav__item"><a href="#" class="main-view-nav__link">Classifiche</a></li>
+            <li class="main-view-nav__item"><a href="#" class="main-view-nav__link">Generi e Mood</a></li>
+            <li class="main-view-nav__item"><a href="#" class="main-view-nav__link">Nuove uscite</a></li>
+            <li class="main-view-nav__item"><a href="#" class="main-view-nav__link">Scopri</a></li>
+          </ul>
+        </nav>
+        <!-- /Main View Navigation -->
+        <!-- Recently Played -->
+        <div class="featured recently-played">
+          <h2 class="featured__title">Recently Played</h2>
+          <div class="featured__container">
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/metal_lifting.jpg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Heavy Metal</h3>
+                <p class="featured-item__author">Various Authors</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/stranger.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                <p class="featured-item__author">Kyle Dixon & Michael Stein</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/aquietplace.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">A Quiet place</h3>
+                <p class="featured-item__author">Author</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/split.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Split</h3>
+                <p class="featured-item__author">Author</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/cure.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">A Cure for Wellness</h3>
+                <p class="featured-item__author">Author</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/sinister.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Sinister</h3>
+                <p class="featured-item__author">Author</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Recently Played -->
+        <!-- Created For -->
+        <div class="featured created-for">
+          <h2 class="featured__title">Created for John Doe</h2>
+          <p class="featured__subtitle">Più ascolti, più accurati saranno i suggerimenti</p>
+          <div class="featured__container">
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/radar.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Release Radar</h3>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/mixdaily.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Daily Mix 1</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Created For -->
+        <!-- Popular -->
+        <div class="featured popular">
+          <h2 class="featured__title">Artisti più popolari</h2>
+          <p class="featured__subtitle">Più ascolti, più accurati saranno i suggerimenti</p>
+          <div class="featured__container">
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/youg.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Young & Beautiful</h3>
+                <p class="featured-item__author">Lana del Rey</p>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div class="featured-item__img-container">
+                <img src="img/einaudi.jpeg" alt="" class="featured-item__img">
+              </div>
+              <div class="featured-item__data">
+                <h3 class="featured-item__title">Titolo</h3>
+                <p class="featured-item__author">Ludovico Einaudi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Popular -->
+      </section>
+      <!-- /main-view -->
+    </main>
+    <!-- /main content -->
+
+    <!-- footer player -->
+    <footer class="player">
+      <!-- player playing -->
+      <div class="player__playing">
+        <img src="img/sinister.jpeg" alt="" class="playing__img">
+        <div class="playing__data">
+          <h3 class="playing__title">Sinister</h3>
+          <p class="playing__author">Author</p>
+        </div>
+        <div class="playing__actions">
+          <a href="#" class="actions__favorite"><i class="far fa-heart"></i></a>
+          <a href="#" class="actions__playlist"><i class="far fa-folder"></i></a>
+        </div>
+      </div>
+      <!-- /player playing -->
+      <!-- player controls -->
+      <div class="player__controls">
+        <div class="player__controls-top">
+          <a href="#" class="button-shuffle"><i class="fas fa-random"></i></a>
+          <a href="#" class="button-prev"><i class="fas fa-step-backward"></i></a>
+          <a href="#" class="button-play"><i class="far fa-play-circle"></i></a>
+          <a href="#" class="button-next"><i class="fas fa-step-forward"></i></a>
+          <a href="#" class="button-repeat"><i class="fas fa-redo-alt"></i></a>
+        </div>
+        <div class="player__controls-bottom">
+          <div class="player__time-current">0:25</div>
+          <div class="player__time"></div>
+          <div class="player__time-end">4:35</div>
+        </div>
+      </div>
+      <!-- /player controls -->
+      <!-- player settings -->
+      <div class="player__settings">
+        <a href="#" class="button-playlist"><i class="fas fa-list-ul"></i></a>
+        <a href="#" class="button-desktop"><i class="fas fa-desktop"></i></a>
+        <div class="player__volume">
+          <a href="#" class="button-volume"><i class="fas fa-volume-up"></i></a>
+          <div class="volume-bar"></div>
+        </div>
+      </div>
+      <!-- /player settings -->
+    </footer>
+    <!-- /footer player -->
+  </div>
+
+</body>
+</html>
